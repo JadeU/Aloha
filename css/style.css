@@ -1,0 +1,285 @@
+* {
+  /*border: 1px dashed grey;*/
+  box-sizing: border-box;
+}
+
+header,
+nav,
+h2 {
+  margin: 20px 0 20px 0;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0.05px 0.05;
+  height: 55px;
+}
+
+.site-header-cart {
+  display: flex;
+  align-content: space-between;
+  padding: 60;
+}
+
+.site-header-logo {
+  display: flex;
+  align-content: space-between;
+  padding: 60;
+}
+
+.site-banner {
+  padding: 50px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/banner-girl.png"), url("../images/flower-bkgd.jpg");
+  background-size: cover, 200px, cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.site-banner-title {
+  font-size: 60px;
+  color: white;
+  display: block;
+}
+
+.site-banner-title-small {
+  font-size: 25px;
+  color: white;
+  text-align: inherit;
+}
+
+.introduction {
+  /* display: flex; */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.introduction-title {
+  display: block;
+}
+
+.product-category-images ul li {
+  font-style: normal;
+  font-size: 25px;
+  text-align: center;
+  color:white;
+  font-weight: bolder;
+  /* height: 50px; */
+  display: flex;
+  justify-content: row;
+}
+
+.product-mens {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/mens-category.jpg");
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-trends {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/trends-category.jpg");
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width:400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-glasses {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/glasses-category.jpg");
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+}
+
+.product-sale {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/sale-category.jpg");
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.product-bags {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/bags-category.jpg");
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.product-womens {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/womens-category.jpg");
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.carousel-header {
+  text-align: center;
+}
+
+.item-description {
+  font-weight: normal;
+  font-size: 24px;
+  color: #e2574c;
+  line-height: 2;
+}
+
+.item-category {
+  font-weight: medium;
+  font-size: 14px;
+  color: #d7d7d7;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: normal;
+  color: #d7d7d7;
+}
+
+.p {
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+}
+
+.container {
+  width: 1240;
+  margin: 0 auto;
+}
+
+.sign-up {
+  padding: 100px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/wave-bkgd.jpg);
+  background-size: cover;
+  background-position: center, bottom center, center;
+  background-repeat: no-repeat;
+  height: 400px;
+  text-align: center;
+}
+
+bold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+
+em {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3rem;
+  color: white;
+}
+
+.alternate-em {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3rem;
+  color: black;
+}
+
+.alternate-bold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  color: black;
+}
+
+body {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
+}
+
+h1 {
+  color: #969696;
+  /* font-size: ; */
+}
+
+.site-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: #242424;
+  height: 300px;
+  color: white;
+}
+
+.site-footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.site-footer-contact {
+  width: 25%;
+  margin-right: 100px;
+  padding: 2rem;
+  display: block;
+  line-height: 2;
+}
+
+.site-nav {
+  color: #e2574c;
+  font-weight: bold;
+  flex-grow: 1;
+  list-style: center;
+  margin: 0;
+  padding: 30px;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav ul {
+  display: flex;
+  justify-content: row;
+  color: #e2574c;
+}
+.site-nav li {
+  margin: 0 20px;
+}
+
+.about-aloha {
+  line-height: 2;
+}
