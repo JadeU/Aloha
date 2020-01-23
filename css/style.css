@@ -393,4 +393,22 @@ bold {
     width: 25%;
     height: 25vw;
   }
+
+  .product-womens {
+    width: 50%;
+    height: 25vw;
+  }
+
+  .product-sale {
+    width: 25%;
+    height: 25vw;
+  }
+
+  .product-bags {
+    width: 25%;
+    height: 25vw;
+  }
+
+
+
 }
