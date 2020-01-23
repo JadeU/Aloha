@@ -1,5 +1,5 @@
 * {
-  /*border: 1px dashed grey;*/
+  /* border: 1px solid black; */
   box-sizing: border-box;
 }
 
@@ -19,12 +19,10 @@ h6 {
   font-family: "Playfair Display";
 }
 
-
 h1 {
   color: #969696;
-  /* font-size: ; */
+  font-size: rem;
 }
-
 
 header,
 nav,
@@ -33,6 +31,7 @@ h2 {
   padding: 10px;
   /* border: 1px solid black; */
 }
+
 em {
   font-style: italic;
   font-weight: normal;
@@ -53,18 +52,17 @@ bold {
   color: white;
 }
 
-
 .alternate-em {
   font-style: italic;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
 }
 
 .alternate-bold {
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
 }
 
@@ -74,27 +72,25 @@ bold {
   color: #d7d7d7;
 }
 
-
-
-
 /* Layout */
 
 .container {
-  width: 1240;
+  width: 414;
   margin: 0 auto;
 }
 
 /* Content Area */
 
 .site-banner-title {
-  font-size: 3.75rem;
+  font-size: 2.2rem;
   color: white;
-  display: block;
+  display: inline-block;
 }
 
 .site-banner-title-small {
-  font-size: 1.563rem;
+  font-size: 1.2rem;
   color: white;
+  font-weight: lighter;
   text-align: inherit;
 }
 
@@ -110,13 +106,20 @@ bold {
 
 .site-nav ul {
   display: flex;
-  justify-content: row;
+  justify-content: center;
   color: #e2574c;
 }
 
-
 .site-nav li {
   margin: 0 20px;
+}
+
+.site-nav a {
+  color: #e2574c;
+}
+
+.site-nav a:hover {
+  color: #b8554e;
 }
 
 .item-category {
@@ -128,36 +131,51 @@ bold {
 .container-header {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
+  align-content: bottom;
   padding: 0.05px 0.05;
-  height: 55px;
+  flex-wrap: wrap;
 }
-
 
 .site-header-cart {
   display: flex;
   align-content: space-between;
-  padding: 60;
+  /* padding: 60; */
+  order: 2;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.site-header-cart img {
+  width: 60px;
+  max-width: 100%;
 }
 
 .site-header-logo {
   display: flex;
   align-content: space-between;
-  padding: 60;
+  /* padding: 60px; */
+  order: 1;
+  width: 50%;
+}
+.site-header-logo img {
+  width: 200px;
+  max-width: 100%;
 }
 
 .site-nav {
   color: #e2574c;
   font-weight: bold;
   flex-grow: 1;
-  list-style: center;
+  order: 3;
+  width: 100%;
+  /* list-style: center;
   margin: 0;
   padding: 30px;
   font-size: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
-
 
 .site-banner {
   padding: 50px 0;
@@ -177,14 +195,13 @@ bold {
   font-style: normal;
   font-size: 1.563rem;
   text-align: center;
-  color:white;
+  color: white;
   font-weight: bolder;
-  padding: 5px;
+  padding: 0px;
   /* height: 50px; */
-  display: flex; 
-  flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
 }
-
 
 .product-mens {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -192,14 +209,14 @@ bold {
   background-size: cover;
   background-position: center, bottom center, center;
   background-repeat: no-repeat;
-  height: 400px;
-  width: 600px; 
-  margin:5px;
+  height: 50vw;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
 }
-
 
 .product-trends {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -207,14 +224,12 @@ bold {
   background-size: cover;
   background-position: center, bottom center, center;
   background-repeat: no-repeat;
-  height: 400px;
-  width:375px; 
-  margin: 5px;
+  height: 50vw;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .product-glasses {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -222,14 +237,12 @@ bold {
   background-size: cover;
   background-position: center, bottom center, center;
   background-repeat: no-repeat;
-  height: 400px;
-  width: 420px;
-  margin:5px;
+  height: 50vw;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .product-sale {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -240,11 +253,9 @@ bold {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 420px;
-  margin:5px;
+  height: 200px;
+  width: 50%;
 }
-
 
 .product-bags {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -255,11 +266,9 @@ bold {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 400px;
-  margin:5px;
+  height: 200px;
+  width: 50%;
 }
-
 
 .product-womens {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -270,11 +279,9 @@ bold {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  width: 600px;
-  margin:5px;
+  height: 200px;
+  width: 100%;
 }
-
 
 .carousel-header {
   text-align: center;
@@ -287,7 +294,6 @@ bold {
   line-height: 2;
 }
 
-
 .sign-up {
   padding: 100px 0;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -299,44 +305,87 @@ bold {
   text-align: center;
 }
 
+.subscribe {
+  item-color: #e2574c;
+}
 
 .site-footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   background-color: #242424;
-  height: 300px;
+  /* height: 300px; */
   color: white;
-  margin-bottom: 0;
-  margin-top: 3px;
+  /* margin-bottom: 0;
+  margin-top: 3px; */
+  width: 100%;
+  height: auto;
+  padding: 5px;
 }
 
 .site-footer-social {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  line-height: 3;
+  padding: 20px;
+}
+
+.social-names {
+  color: #242424;
 }
 
 .site-footer-contact {
   width: 25%;
   margin-right: 100px;
   padding: 2rem;
-  display: block;
+  display: flex;
   line-height: 2;
 }
 
 .about-aloha {
+  display: inline-block;
   line-height: 2;
+  font-size: 1rem;
 }
 
 /* Above is for Mobile */
+
 /* Breakpoints */
 /* Tablet */
+/* Desktop */
 
-/* @media screen and (min-width: 600px) {
-  .body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 600px) {
+  .container-header {
+    flex-wrap: nowrap;
   }
-} */
+
+  .site-header-logo {
+    order: 1;
+    width: 15%;
+  }
+  .site-header-cart {
+    order: 3;
+    width: 15%;
+  }
+
+  .site-nav {
+    order: 2;
+    width: 70%;
+  }
+
+  .product-mens {
+    width: 50%;
+    height: 25vw;
+  }
+
+  .product-trends {
+    width: 25%;
+    height: 25vw;
+  }
+
+  .product-glasses {
+    width: 25%;
+    height: 25vw;
+  }
+}
