@@ -24,6 +24,10 @@ h1 {
   font-size: rem;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 header,
 nav,
 h2 {
@@ -87,6 +91,7 @@ bold {
   display: inline-block;
 }
 
+
 .site-banner-title-small {
   font-size: 1.2rem;
   color: white;
@@ -118,8 +123,18 @@ bold {
   color: #e2574c;
 }
 
+
 .site-nav a:hover {
   color: #b8554e;
+}
+
+button{
+  background-color:#e2574c;
+  
+}
+
+button:hover {
+  background-color: #e06e66;
 }
 
 .item-category {
@@ -311,12 +326,20 @@ bold {
 }
 
 .subscribe {
-  item-color: #e2574c;
+  color: #e2574c;
 }
+
+.container-footer {
+  display:flex;
+  flex-direction: column;
+  align-items: center ;
+  line-height: 1;
+}
+
 
 .site-footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap:wrap;
   justify-content: space-between;
   background-color: #242424;
   /* height: 300px; */
@@ -328,47 +351,81 @@ bold {
   padding: 5px;
 }
 
-.site-footer-social {
+.site-footer-contact{
+  width: 25%;
+  /* margin-right: 100px; */
+  /* padding: 2rem; */
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;}
+  
+
+.footer-social-links ul{
+  display: flex;
+  flex-direction: row;
   line-height: 3;
-  padding: 20px;
-}
+  padding: 20px;}
+
 
 .social-names {
-  color: #242424;
+  display:none;
 }
 
-.site-footer-contact {
-  width: 25%;
-  margin-right: 100px;
-  padding: 2rem;
-  display: flex;
-  line-height: 2;
-}
 
-.about-aloha {
-  display: inline-block;
+.about-aloha { 
   line-height: 2;
   font-size: 1rem;
 }
+
+.carousel-cell{
+  width:100%;
+  text-align:center;
+    }
+
+
+button{
+      background-color: #e2574c;
+        color: white;
+        font-weight: 700;
+        /* padding: .25rem 1.25rem;
+        right: .25rem;
+        top: .25rem; */
+        border-radius: 50px; 
+        position: relative;
+        /* height: 55px;
+        width: 50; */
+    }
+      
+      
+    button:hover {
+      background-color: #e06e66;
+    }
+  
+    .subscribe-form input{
+border-radius: 50px;
+position: absolute;
+  }
+
 
 /* Above is for Mobile */
 
 /* Breakpoints */
 /* Tablet */
-/* Desktop */
 
 @media screen and (min-width: 600px) {
   .container-header {
     flex-wrap: nowrap;
   }
 
+  .social-names {
+    display:block;
+  }
+
   .site-header-logo {
     order: 1;
     width: 15%;
   }
+
   .site-header-cart {
     order: 3;
     width: 15%;
@@ -409,6 +466,87 @@ bold {
     height: 25vw;
   }
 
+  .carousel-cell{
+    width:50%;
+  }
+
+/* Desktop */
+
+@media screen and (min-width:1240px){
 
 
+  .alternate-em {
+    font-size: 3.0rem;
+    color: black;
+  }
+  
+  .alternate-bold {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.0rem;
+    color: black;
+  }
+  .about-aloha {
+    display: inline-block;
+    line-height: 2;
+    font-size: large; 
+  }
+
+.product-mens {
+  width: 50%;
+  height: 25vw;
 }
+
+.product-trends {
+  width: 25%;
+  height: 25vw;
+}
+
+.product-glasses {
+  width: 25%;
+  height: 25vw;
+}
+
+.product-womens {
+  width: 50%;
+  height: 25vw;
+}
+
+.product-sale {
+  width: 25%;
+  height: 25vw;
+}
+
+.product-bags {
+  width: 25%;
+  height: 25vw;
+} 
+
+.carousel-cell{
+  width:25%;
+}
+
+button{
+    height: 40px;
+    width: 123px;
+    position: absolute;
+}
+
+.subscribe-form input{
+height: 48px;
+width: 444px;
+position: relative;
+}
+
+
+.footer-social-links{
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.site-footer-contact{
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+}
+
