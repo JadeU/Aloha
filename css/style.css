@@ -5,7 +5,17 @@
 
 /* Elements */
 
-body {
+.container-header {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 3px black;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+}
+
+body,
+.subscribe-form input{
   font-family: "Raleway";
   font-weight: 300;
 }
@@ -15,7 +25,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
   font-family: "Playfair Display";
 }
 
@@ -24,14 +34,14 @@ h1 {
   font-size: rem;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 header,
 nav,
 h2 {
-  margin: 20px 0 20px 0;
+  /* margin: 20px 0 20px 0; */
   padding: 10px;
   /* border: 1px solid black; */
 }
@@ -85,19 +95,17 @@ bold {
 
 /* Content Area */
 
-.site-banner{
+.site-banner {
   flex-direction: column;
   padding: 4rem 0;
+  margin-top: 97px;
 }
-
 
 .site-banner-title {
   font-size: 2.2rem;
   color: white;
   display: inline-block;
 }
-
-
 
 .site-banner-title-small {
   font-size: 1.2rem;
@@ -107,8 +115,8 @@ bold {
 }
 
 .introduction {
-  /* display: flex; */
-  padding: 10px 0;
+  padding-top: 60px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -130,14 +138,12 @@ bold {
   color: #e2574c;
 }
 
-
 .site-nav a:hover {
-  color:#b64036;
+  color: #b64036;
 }
 
-button{
-  background-color:#e2574c;
-  
+button {
+  background-color: #e2574c;
 }
 
 button:hover {
@@ -323,32 +329,28 @@ button:hover {
   background-repeat: no-repeat;
   height: 400px;
   text-align: center;
-  font-size:2.5vw;
+  font-size: 2.5vw;
   margin-top: 10px;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
-
 
 .subscribe {
   color: #e2574c;
 }
 
-
 .container-footer {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items: center ;
+  align-items: center;
   line-height: 1;
 }
 
-
-.footer-flex{
-  display:flex;
+.footer-flex {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-
 
 .site-footer {
   background-color: #242424;
@@ -361,71 +363,65 @@ button:hover {
   padding: 5px;
 }
 
-
-.site-footer-contact{
+.site-footer-contact {
   width: 25%;
   /* margin-right: 100px; */
   /* padding: 2rem; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;}
-  
+  justify-content: space-between;
+}
 
-.footer-social-links ul{
+.footer-social-links ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   line-height: 3;
   padding: 20px;
-  margin-bottom:1em;
+  margin-bottom: 1em;
 }
 
 .social-names {
-  display:none;
+  display: none;
 }
 
-
-.about-aloha { 
+.about-aloha {
   line-height: 2;
-  font-size:2.5vw;
+  font-size: 2.5vw;
 }
 
+.carousel-cell {
+  width: 100%;
+  text-align: center;
+}
 
-.carousel-cell{
-  width:100%;
-  text-align:center;
-  }
+button {
+  background-color: #e2574c;
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  height: 34px;
+  width: 70px;
+}
 
+.subscribe-form {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+}
 
-button{
-      background-color: #e2574c;
-        color: white;
-        font-weight: 700;
-        border-radius: 50px; 
-        position: absolute;
-        right:2px; 
-        top:4px;
-  }
-      
-      
-    button:hover {
-      background-color: #b64036;
-    }
-
-    .subscribe-form {
-      position: relative;
-      max-width:600px;
-      margin: 0 auto;
-    }
-  
-    .subscribe-form input{
-      border-radius: 50px;
-      width:100%;
-  }
+.subscribe-form input {
+  border-radius: 50px;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+}
 
 
 /* Above is for Mobile */
-
 
 /* Breakpoints */
 
@@ -481,110 +477,151 @@ button{
     height: 25vw;
   }
 
-  .carousel-cell{
-    width:50%;
+  .carousel-cell {
+    width: 50%;
+  }
 
-}
+  .social-names {
+    display: block;
+  }
 
-.social-names {
-  display:block;
-}
+  .subscribe-form {
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .subscribe-form input{
+    height: 48px;
+  }
 
+  button{
+    height: 42px;
+    width: 100px;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    line-height: 1;
+  }
 }
 
 /* Desktop */
 
-@media screen and (min-width:800px){
-
+@media screen and (min-width: 800px) {
   .site-banner-title {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
-  
-  
+
   .site-banner-title-small {
     font-size: 1.25rem;
   }
 
   .alternate-em {
-    font-size: 3.0rem;
+    font-size: 3rem;
     color: black;
   }
-  
+
   .alternate-bold {
     font-style: normal;
     font-weight: 700;
-    font-size: 3.0rem;
+    font-size: 3rem;
     color: black;
   }
   .about-aloha {
     display: inline-block;
     line-height: 2;
-    font-size: large; 
+    font-size: large;
   }
 
+  .product-mens {
+    width: 50%;
+    height: 25vw;
+  }
 
-.product-mens {
-  width: 50%;
-  height: 25vw;
-}
+  .product-trends {
+    width: 25%;
+    height: 25vw;
+  }
 
-.product-trends {
-  width: 25%;
-  height: 25vw;
-}
+  .product-glasses {
+    width: 25%;
+    height: 25vw;
+  }
 
-.product-glasses {
-  width: 25%;
-  height: 25vw;
-}
+  .product-womens {
+    width: 50%;
+    height: 25vw;
+  }
 
-.product-womens {
-  width: 50%;
-  height: 25vw;
-}
+  .product-sale {
+    width: 25%;
+    height: 25vw;
+  }
 
-.product-sale {
-  width: 25%;
-  height: 25vw;
-}
+  .product-bags {
+    width: 25%;
+    height: 25vw;
+  }
 
-.product-bags {
-  width: 25%;
-  height: 25vw;
-} 
- 
-.carousel-cell{
-  width:25%;
-}
+  .carousel-cell {
+    width: 25%;
+  }
 
-button{
+  button {
     height: 40px;
     width: 123px;
     position: absolute;
+  }
 
-}
+  .subscribe-form input {
+    height: 48px;
+    position: relative;
+  }
 
-.footer-flex{
-  flex-direction: row;
-}
+  .footer-flex {
+    flex-direction: row;
+  }
 
-.subscribe-form input{
-height: 48px;
-position: relative;
-}
+  .footer-social-links {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 
+  .site-footer-contact {
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 30px;
+  }
 
-.footer-social-links{
-  flex-wrap: wrap;
-  flex-direction: row;
-}
+  button:hover {
+    background-color: #b64036;
+  }
+  
+  .subscribe-form {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .subscribe-form input {
+    border-radius: 50px;
+    width: 100%;
+  }
 
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .social-links-container {
+    display: flex
+    flex-direction: column;
 
-.site-footer-contact{
-  flex-wrap: wrap;
-  flex-direction: row;
-  text-align: left;
-  margin-top: 30px;
-}
+  }
 
 }
