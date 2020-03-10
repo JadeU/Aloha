@@ -607,11 +607,15 @@ button {
   }
 
   .site-footer-copyright{
-    margin-top: 20px;
+    margin-top: 40px;
+    line-height: 1.5rem;
+    margin-left: 40px;
   }
 
   .site-footer-address{
-    color: lightgray;
+    color: #969696;
+    margin-bottom: 30px;
+    margin-left: 40px;
   }
 
   .footer-social-links {
@@ -620,14 +624,14 @@ button {
   }
 
   .site-footer-phone{
-    margin-top: 30px;
+    margin: 20px 8px 20px 40px;
   }
 
   .site-footer-email {
     flex-wrap: wrap;
     flex-direction: row;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 30px 15px;
     margin-bottom: 15px;
     font-weight: bold;
     font-family: 'Raleway';
@@ -660,7 +664,5 @@ button {
   .social-links-container {
     display: flex;
     flex-direction: column;
-
   }
-
 
