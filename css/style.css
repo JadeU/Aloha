@@ -606,16 +606,33 @@ button {
     flex-direction: row;
   }
 
+  .site-footer-copyright{
+    margin-top: 20px;
+  }
+
+  .site-footer-address{
+    color: lightgray;
+  }
+
   .footer-social-links {
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .site-footer-contact {
+  .site-footer-phone{
+    margin-top: 30px;
+  }
+
+  .site-footer-email {
     flex-wrap: wrap;
     flex-direction: row;
     text-align: left;
     margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Raleway';
+    text-decoration: underline; 
+    } 
   }
 
   button:hover {
@@ -646,4 +663,4 @@ button {
 
   }
 
-}
+
