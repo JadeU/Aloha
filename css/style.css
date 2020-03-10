@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid black; */
+
   box-sizing: border-box;
 }
 
@@ -71,9 +71,9 @@ html {
 header,
 nav,
 h2 {
-  /* margin: 20px 0 20px 0; */
+  
   padding: 10px;
-  /* border: 1px solid black; */
+ 
 }
 
 em {
@@ -198,7 +198,6 @@ button:hover {
 .site-header-cart {
   display: flex;
   align-content: space-between;
-  /* padding: 60; */
   order: 2;
   width: 50%;
   display: flex;
@@ -212,7 +211,6 @@ button:hover {
 .site-header-logo {
   display: flex;
   align-content: space-between;
-  /* padding: 60px; */
   order: 1;
   width: 50%;
 }
@@ -384,10 +382,7 @@ button:hover {
 
 .site-footer {
   background-color: #242424;
-  /* height: 300px; */
   color: white;
-  /* margin-bottom: 0;
-  margin-top: 3px; */
   width: 100%;
   height: auto;
   padding: 5px;
@@ -395,8 +390,6 @@ button:hover {
 
 .site-footer-contact {
   width: 25%;
-  /* margin-right: 100px; */
-  /* padding: 2rem; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -649,7 +642,7 @@ button {
   }
   
   .social-links-container {
-    display: flex
+    display: flex;
     flex-direction: column;
 
   }
